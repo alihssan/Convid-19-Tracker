@@ -1,6 +1,6 @@
 import React,{Suspense} from 'react';
 import './App.css';
-import {fetchdata,fetchdailydata} from "./Data"
+import {fetchdata} from "./Data"
 import Sample from "./Component/Sample.js"
 const data=fetchdata();
 

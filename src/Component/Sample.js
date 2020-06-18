@@ -11,7 +11,7 @@ function Sample(props){
         data.then(val=>setst({global:{...val.Global},country:{...val.Countries}}))
             
           
-    },[])
+    },[data])
     let key=Object.keys(st.country);
     let CountryNames=key.map(val=>st.country[val]["Country"])
 

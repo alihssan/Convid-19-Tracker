@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
     const condat=useContext(Share);
     const dataapi=condat;
     const data=dataapi.country;
-    const dataGlobal=dataapi.global;
     const key=Object.keys(data)
     let CountryData=key.filter(val=>
       data[val]["Country"]===props.name)
