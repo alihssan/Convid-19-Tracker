@@ -30,5 +30,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.10.2",
+    "chart.js": "^2.9.3",
+    "react-chartjs-2": "^2.9.0",
+    "react-icons": "^3.10.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   }
 }
