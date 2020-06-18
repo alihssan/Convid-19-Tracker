@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Suspense} from 'react';
 import './App.css';
+import {fetchdata,fetchdailydata} from "./Data"
+import Sample from "./Component/Sample.js"
+const data=fetchdata();
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+  return (
+    <div className="cont">
+
+    <Suspense fallback={<h1>Loading.....</h1>}>
+
+      <Sample data={data} />
+    </Suspense>
+  </div>
+
+  )
+}
+export default App

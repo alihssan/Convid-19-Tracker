@@ -1,38 +1,174 @@
-.App {
+*{
+  margin: 0px;
+
+}
+.cont{
+  background-color: lavender;
+  height:700px;
+  
+}
+.sidedata{
+  width: 30%;
+  padding-top: 35px;
+  margin-top: 20px;
+  margin-left: 20px;
+  height:618px;
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+  opacity: 0.7;
+  float: left;
+
+}
+.sidedata h1{
+  text-align: center;
+  color: red;
+  font-size: 40px;
+  font-weight: 500;
+}
+.totalcase{
+  font-size: 15px;
+  color: #cccccc;
+  font-weight: 900;
+  text-align: center;
+
+
+}
+.value{
+  text-align: left;
+  color:green;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.value2{
+  text-align: right;
+  color: red;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 40px;
+  margin-left: 105px;
+  display: inline-block;
+
+}
+.head{
+  text-align: left;
+  color: #cccccc;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.head2{
+  text-align: right;
+  color: #cccccc;
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-left: 124px;
+  display: inline-block;
+
+}
+.side{
+  float: right;
+  width: 65%;
+  margin-top: 20px;
+  padding-top: 35px;
+  height:650px;
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px grey;
+  opacity: 0.7;
+  margin-right: 20px;
+  padding-top:0px;
+  
+
+}
+.scrolling{
+  width:90%;
+  height:200px;
+  margin-left: 5%;
+  overflow-y: scroll;
+
+  
+}
+.name{
+  color:grey;
+  font-size: 20px;
+  margin-top: 15px;
+  float: left;
+  margin-left: 15px;
+  font-weight: 400;
+}
+.amount{
+  color: black;
+  font-size: 20px;
+  margin-top: 15px;
+  float: right;
+  font-weight: 400;
+
+}
+.country_card{
+  width: 99%;
+  height:50px;
+  margin-left: 0%;
+}
+.graph{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  margin-left: 20px;
+  background-color: white;
+  font-weight: 500;
+
+}
+.map{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  margin-left: 13px;
+  background-color: white;
+  font-weight: 500;
+
+}
+.chartdiv{
+  width:100%;
+  height:90%;
+
+}
+.linechart{
+  width: 100%;
+  height:250px;
+}
+.doughnut1{
+  width:49%;
+  height:250px;
+  float: left;
+  margin-top: 20px;
+}
+.doughnut2{
+  width:49%;
+  height:250px;
+  float: right;
+  margin-top: 20px;
+
+}
+.doughnut1 h1{
+  font-size: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.doughnut2 h1{
+  font-size: 20px;
+  text-align: center;
 }
