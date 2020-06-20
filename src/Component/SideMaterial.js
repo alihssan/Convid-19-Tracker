@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     useEffect(()=>{
       fetchdailydata(props.name)
       .then(data=>setdail({dataa:{...data}}))
-    },[])
+    },[props.name])
     return(
         <div className="side">
             <Button
