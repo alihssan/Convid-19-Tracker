@@ -8,6 +8,7 @@ import {fetchdailydata} from './../Data'
 import Doughnut from './DoughnutGraph'
 import {Share} from './Sample'
 import {withRouter} from 'react-router-dom'
+import Map from './Mapbox.js'
 
 const useStyles = makeStyles((theme) => ({
     button: {
@@ -53,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       >
         Map
       </Button>
-      {link===true &&
+      {link===true ?
       <div className="chartdiv">
         <div className="linechart">
           <LineGraph data={dail}/>
@@ -72,7 +73,11 @@ const useStyles = makeStyles((theme) => ({
 
         </div>
       </div>
+      :
+      <Map/>
+
  }
+ 
 
         </div>
     )

@@ -15,3 +15,5 @@ export const fetchdailydata=(country)=>{
             .then(res=>res.json())
             .then(data=>data)
 }
+
+    

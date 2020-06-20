@@ -21,7 +21,7 @@ function CountryDetails(props){
     let CountryData=key.map(val=>{return {...data[val]}})
     const classes = useStyles();
     const [text,setext]=useState("")
-    let khan=CountryData.filter(val=>text!=="" ? val["Country"].slice(0,1)===text  : val["Country"] )
+    let khan=CountryData.filter(val=>text!=="" ? val["Country"].includes(text)  : val["Country"] )
     return(
         <React.Fragment>
             <form className={classes.root} noValidate autoComplete="off">
