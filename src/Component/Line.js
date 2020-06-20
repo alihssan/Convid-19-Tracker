@@ -4,11 +4,9 @@ import {Line} from 'react-chartjs-2';
 
 export default function LineGraph(props){
   let key=Object.keys(props.data.dataa)
-  console.log(`${key}khan`)
   const value=props.data.dataa
   let x_label=key.map(val=>(value[val]["Cases"]))
   let y=key.map(val=>value[val]["Date"].slice(0,10))
-  console.log(x_label,y)
   const data = {
     labels: y,
     datasets: [

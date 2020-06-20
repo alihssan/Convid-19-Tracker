@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import useSWR from 'swr'
 import "mapbox-gl/dist/mapbox-gl.css";
 import lookup from "country-code-lookup";
-
+import Loader from './Loader'
 mapboxgl.accessToken = "pk.eyJ1IjoiYWxpaHNzYW4iLCJhIjoiY2tiM25wNW4yMDNscjJ3cGQ3bHV5cGQzeSJ9.Pp5sE3ybvkdT3MbM1cJHeA";
 
 function Map() {
@@ -166,10 +166,14 @@ function Map() {
 
   return (
     <div className="App">
+      {data ? 
       <div className="mapContainer">
         {/* Assigned Mapbox container */}
         <div className="mapBox" ref={mapboxElRef} />
       </div>
+      :
+      <Loader/>
+}
     </div>
   );
 }

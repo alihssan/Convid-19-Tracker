@@ -30,7 +30,7 @@ function CountryDetails(props){
             </form>
             <div className="scrolling">
                 {khan.map(val=>
-                <NavLink to={`${val["Country"]}`}>
+                <NavLink to={`${val["Country"]}`} key={val["CountryCode"]}>
                 <div className="country_card" 
                 style={{border:props.location.pathname.slice(1)===val["Country"] 
                 &&
