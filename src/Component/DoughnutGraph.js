@@ -12,20 +12,20 @@ export default function Dougnut(props){
 		datasets: [{
 			data: [props.death, props.confirm, props.recover],
 			backgroundColor: [
-			'red',
-			'green',
-			'blue'
+			'#e6adbc',
+			'#399cbd',
+			'#cfb53b'
 			],
 			hoverBackgroundColor: [
-			'#FF6384',
-			'#36A2EB',
-			'#FFCE56'
+			'#e75480',
+			'blue',
+			'yellow'
 			]
 		}]
 	};
     return (
         <div>
-            <Doughnut data={data} options={{ maintainAspectRatio: false }} width={"100%"} height={"250px"}/>
+            <Doughnut data={data} options={{ maintainAspectRatio: false }} width={"95%"} height={"250px"}/>
         </div>
     )
 }

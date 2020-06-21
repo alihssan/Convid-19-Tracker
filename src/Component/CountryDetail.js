@@ -7,10 +7,10 @@ const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
         margin: theme.spacing(1),
-        width: '120%',
+        width: '90%',
         marginTop:'40px',
         marginLeft:'20px',
-        borderBottom:'5px solid black'
+        borderBottom:'5px solid #44a6c6'
       },
     },
   }));
@@ -42,7 +42,7 @@ function CountryDetails(props){
                  key={val["CountryCode"]}>
                     <p className="name">{val["Country"].length>=15 ? val["CountryCode"] : val["Country"]}</p>
                     <p className="amount">{val["TotalConfirmed"]}</p>
-                    <TiChartBar size={25} color="green" style={{marginTop:"15px",float:"right"}}/>
+                    <TiChartBar size={25} color="#e75480" style={{marginTop:"15px",float:"right"}}/>
 
                 </div>
                 </NavLink>
