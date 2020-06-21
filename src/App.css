@@ -281,7 +281,7 @@
       height:1400px;
     }
   }
-@media (max-height:750px){
+@media (min-height:750px){
   .sidedata{
     height: 700px;
   }
