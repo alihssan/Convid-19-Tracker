@@ -7,9 +7,9 @@ const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
         margin: theme.spacing(1),
-        width: '35ch',
+        width: '120%',
         marginTop:'40px',
-        marginLeft:'35px',
+        marginLeft:'20px',
         borderBottom:'5px solid black'
       },
     },
@@ -24,7 +24,7 @@ function CountryDetails(props){
     let khan=CountryData.filter(val=>text!=="" ? val["Country"].includes(text)  : val["Country"] )
     return(
         <React.Fragment>
-            <form className={classes.root} noValidate autoComplete="off">
+            <form className={classes.root} id="form" noValidate autoComplete="off">
                 <TextField id="standard-basic" label="Select Country" value={text} onChange={(e)=>setext(e.target.value)} />           
                 
             </form>

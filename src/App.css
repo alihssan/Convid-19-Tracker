@@ -217,3 +217,57 @@
     width: 4rem;
     height: 4rem;
   }
+  @media (max-width:1250px){
+    .sidedata h1{
+      font-size: 30px;
+    }
+    .value{
+      font-size: 25px;
+    }
+    .value2{
+      font-size: 25px;
+    }
+    .head{
+      margin-left: 15px;
+    }
+    .head2{
+      margin-left: 105px;
+    }
+    #form{
+      width:200px;
+    }
+  }
+  
+  @media (max-width:360px){
+    .sidedata{
+      width: 90%;
+    }
+    .value{
+      font-size: 23px;
+      margin-left: 35px;
+    }
+    .value2{
+      font-size: 23px;
+      margin-left: 90px;
+    }
+    .head{
+      font-size: 15px;
+    }
+    .head2{
+      font-size: 15px;
+      margin-left:82px;
+
+    }
+    .name{
+      font-size: 17px;
+    }
+    .amount{
+      font-size: 17px;
+    }
+    .scrolling{
+      height: 320px;
+    }
+    .side{
+      width: 100%;
+    }
+  }
